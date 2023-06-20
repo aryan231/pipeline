@@ -8,5 +8,5 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page291/ca
 WORKDIR /var/www/html
 RUN unzip carserv.zip
 RUN cp -rvf car-repair-html-template/* .
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/bin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
